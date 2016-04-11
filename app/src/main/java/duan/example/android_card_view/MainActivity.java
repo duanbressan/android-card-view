@@ -21,17 +21,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = (RecyclerView)findViewById(R.id.rv);
+        recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
 
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(llm);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setHasFixedSize(true);
 
-        initializeData();
+        populateList();
         initializeAdapter();
     }
 
-    private void initializeData(){
+    private void populateList(){
         persons = new ArrayList<>();
         persons.add(new Person("Duan Bressan", "https://github.com/duanbressan", R.drawable.duan));
         persons.add(new Person("Bruno da Luz", "https://github.com/brunov0id", R.drawable.bruno));
