@@ -2,12 +2,12 @@ package duan.example.android_card_view.models;
 
 public class Person {
     String name;
-    String age;
+    String git;
     int photoId;
 
-    public Person(String name, String age, int photoId) {
+    public Person(String name, String git, int photoId) {
         this.name = name;
-        this.age = age;
+        this.git = git;
         this.photoId = photoId;
     }
 
@@ -15,8 +15,8 @@ public class Person {
         return photoId;
     }
 
-    public String getAge() {
-        return age;
+    public String getGit() {
+        return git;
     }
 
     public String getName() {

@@ -19,14 +19,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         CardView cardView;
         TextView personName;
-        TextView personAge;
+        TextView personGit;
         ImageView personPhoto;
 
         PersonViewHolder(View itemView) {
             super(itemView);
             cardView = (CardView)itemView.findViewById(R.id.cv);
             personName = (TextView)itemView.findViewById(R.id.person_name);
-            personAge = (TextView)itemView.findViewById(R.id.person_age);
+            personGit = (TextView)itemView.findViewById(R.id.person_git);
             personPhoto = (ImageView)itemView.findViewById(R.id.person_photo);
         }
     }
@@ -52,7 +52,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(PersonViewHolder personViewHolder, int i) {
         personViewHolder.personName.setText(persons.get(i).getName());
-        personViewHolder.personAge.setText(persons.get(i).getAge());
+        personViewHolder.personGit.setText(persons.get(i).getGit());
         personViewHolder.personPhoto.setImageResource(persons.get(i).getPhotoId());
     }
 

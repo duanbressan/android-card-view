@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void initializeData(){
         persons = new ArrayList<>();
-        persons.add(new Person("Duan Bressan", "23 years old", R.drawable.duan));
-        persons.add(new Person("Bruno da Luz", "25 years old", R.drawable.bruno));
+        persons.add(new Person("Duan Bressan", "https://github.com/duanbressan", R.drawable.duan));
+        persons.add(new Person("Bruno da Luz", "https://github.com/brunov0id", R.drawable.bruno));
     }
 
     private void initializeAdapter(){
